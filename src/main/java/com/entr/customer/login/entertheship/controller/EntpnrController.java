@@ -42,4 +42,10 @@ public class EntpnrController {
 		
 	}
 	
+	@GetMapping(path = "/getsuccess",produces = {"application/json","application/xml"})
+	public ResponseEntity<String> getSuccess(){
+		String success= "Success";
+		return 	ResponseEntity.ok(success);
+	}
+	
 }
